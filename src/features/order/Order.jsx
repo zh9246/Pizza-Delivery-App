@@ -79,11 +79,6 @@ function Order() {
         <div>
         <p>Delivery Charges: ${formatCurrency(deliveryCharges)}</p>
       </div>
-        {priority && (
-          <p className="text-sm font-medium text-stone-600">
-            Price priority: {formatCurrency(priorityPrice)}
-          </p>
-        )}
         <p className=" font-bold">
           To pay on delivery: {formatCurrency(orderPrice + deliveryCharges)}
         </p>

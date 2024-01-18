@@ -4,6 +4,7 @@ import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart, getCart } from "./cartSlice";
 import EmptyCart from "./EmptyCart";
+import { formatCurrency } from "../../utils/helpers";
 
 function Cart() {
   const username = useSelector((state) => state.user.username);
