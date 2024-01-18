@@ -77,7 +77,7 @@ function Order() {
           Price pizza: {formatCurrency(orderPrice)}
         </p>
         <div>
-        <p className="text-sm font-medium text-stone-600">Delivery Charges: {formatCurrency(deliveryCharges)}</p>
+        <p>Delivery Charges: ${formatCurrency(deliveryCharges)}</p>
       </div>
         <p className=" font-bold">
           To pay on delivery: {formatCurrency(orderPrice + deliveryCharges)}
