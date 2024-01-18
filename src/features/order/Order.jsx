@@ -30,7 +30,7 @@ function Order() {
     cart,
   } = order;
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
-
+ const deliveryCharges=5;
   return (
     <div className="space-y-8 px-4 py-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
@@ -76,13 +76,16 @@ function Order() {
         <p className="text-sm font-medium text-stone-600">
           Price pizza: {formatCurrency(orderPrice)}
         </p>
+        <div>
+        <p>Delivery Charges: ${formatCurrency(deliveryCharges)}</p>
+      </div>
         {priority && (
           <p className="text-sm font-medium text-stone-600">
             Price priority: {formatCurrency(priorityPrice)}
           </p>
         )}
         <p className=" font-bold">
-          To pay on delivery: {formatCurrency(orderPrice + priorityPrice)}
+          To pay on delivery: {formatCurrency(orderPrice + deliveryCharges)}
         </p>
       </div>
       
