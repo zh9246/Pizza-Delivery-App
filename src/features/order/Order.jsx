@@ -1,5 +1,5 @@
 import { useFetcher, useLoaderData } from "react-router-dom";
-import { getOrder } from "../../services/apiRestaurant";
+import { getOrder } from "../../services/resturantapi";
 import {
   calcMinutesLeft,
   formatCurrency,

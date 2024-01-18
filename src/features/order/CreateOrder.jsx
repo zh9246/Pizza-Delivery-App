@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
-import { createOrder } from "../../services/apiRestaurant";
+import { createOrder } from "../../services/resturantapi";
 import Button from "../../ui/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart, getCart, getTotalCartPrice } from "../cart/cartSlice";

@@ -9,7 +9,7 @@ function Header() {
      justify-between border-b border-stone-200
      bg-yellow px-4 py-3  uppercase sm:px-6"
     >
-      <Link to="/" className=" tracking-widest">
+      <Link to="/" className=" tracking-widest font-weight bold">
         SwiftSlice
       </Link>
       <SearchOrder />
