@@ -12,6 +12,8 @@ function Cart() {
 
   if (!cart.length) return <EmptyCart />;
 
+ 
+
   return (
     <div className=" px-4 py-3">
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
@@ -24,9 +26,11 @@ function Cart() {
         ))}
       </ul>
 
+      
+
       <div className=" mt-6 space-x-2">
         <Button type="primary" to="/order/new">
-          Order pizzas
+          Continue Order
         </Button>
 
         <Button type="secondary" onClick={() => dispatch(clearCart())}>
