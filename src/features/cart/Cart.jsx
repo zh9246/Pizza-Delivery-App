@@ -13,8 +13,7 @@ function Cart() {
 
   if (!cart.length) return <EmptyCart />;
 
-  // Calculate delivery charges
-  const deliveryCharges = 5; // Example value, replace with your logic
+  const deliveryCharges = 5; 
 
   return (
     <div className=" px-4 py-3">
@@ -29,7 +28,7 @@ function Cart() {
       </ul>
 
       <div>
-        <p>Delivery Charges: ${formatCurrency(deliveryCharges)}</p>
+        <p className="text-sm font-medium text-stone-600">Delivery Charges: {formatCurrency(deliveryCharges)}</p>
       </div>
 
       <div className=" mt-6 space-x-2">
